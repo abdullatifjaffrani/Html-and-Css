@@ -1,0 +1,434 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(135, 207, 235, 0.514);
+}
+
+/* Nevigation Bar */
+.navbar {
+  height: 60px;
+  background-color: #0f1111;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* 1st Box, Site Logo */
+.nav-logo {
+  height: 50px;
+  width: 110px;
+}
+
+.logo {
+  background-image: url(Images/Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+
+/* This will be hover effect on all of our Nav divs */
+.border {
+  border: 1px solid transparent;
+  padding-top: 5px;
+}
+
+.border:hover {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* Box 2, Address Box */
+.nav-address {
+  height: 50px;
+  width: 93px;
+}
+.add-icon {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 0.8rem;
+}
+.add {
+  color: #cccccc;
+  font-size: 0.7rem;
+  margin-left: 15px;
+}
+.add-country {
+  font-size: 1rem;
+  margin-left: 4.5px;
+  font-weight: 550;
+}
+
+/* Box 3, Search Bar */
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  height: 42px;
+  width: 700px;
+  border: 3px solid transparent;
+}
+
+.search-cate {
+  height: 100%;
+  width: 10%;
+  text-align: center;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #f3f3f3;
+  cursor: pointer;
+}
+
+.search-cate:hover {
+  background-color: #dfdfdf;
+}
+
+.search-bar {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-icon {
+  height: 100%;
+  width: 10%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #febd68;
+  font-size: 1.3rem;
+  color: #0f1111;
+}
+
+.search-icon:hover {
+  background-color: #f3b25d;
+}
+
+.nav-search:focus-within {
+  border: 3px solid orange;
+  border-radius: 8px;
+}
+
+/* .search-cate:focus-visible,.search-bar:focus-visible, .search-icon:focus-visible{
+    outline: 2px solid orange;
+    border-radius: 5px;
+} */
+
+/* Box 4, Language */
+.nav-lang {
+  height: 50px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag {
+  height: 25px;
+  width: 25px;
+  background-image: url(Images/US.png);
+  background-size: cover;
+}
+.flag-cn {
+  height: 30%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+/* Box 5 & Box 6, Sign-in & Return boxes */
+.nav-signin,
+.nav-return {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-1st {
+  font-size: 0.8rem;
+}
+
+.nav-sec {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Box 7, Cart Box */
+.nav-cart {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.cart-icon {
+  font-size: 2rem;
+}
+
+.nav-cart p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Panel Bar */
+.panel {
+  height: 40px;
+  background-color: #232f32;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.panel-menu {
+  margin-left: 5px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+.panel-menu p {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  font-weight: 600;
+}
+.panel-opt {
+  width: 95%;
+}
+
+.panel-opt p {
+  display: inline;
+  margin-left: 1%;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* This will be border for panel */
+.border-2 {
+  border: 1px solid transparent;
+  padding: 10px;
+}
+
+.border-2:hover {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+/* This will be our Hero Section */
+.hero-sec {
+  background-image: url(Images/HeroImg.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-text {
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 80%;
+  margin-bottom: 25px;
+  border: 2px;
+}
+
+/* Shop Section */
+.shop {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box {
+  height: 400px;
+  width: 23%;
+  border-radius: 4px;
+  background-color: white;
+  padding: 20px 0 15px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.box-content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.pr-img {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.box-content p {
+  color: #007185;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.box-content p:hover{
+  color: rgb(151, 13, 13);
+}
+
+/* Product 1 */
+.pr1-img {
+  height: 280px;
+  background-image: url(Images/AirFreshner.jpg);
+  background-size: cover;
+}
+
+/* Product 2 */
+.pr2-img {
+  height: 280px;
+  background-image: url(Images/electr.jpg);
+  background-size: cover;
+}
+
+/* Product 3 */
+.pr3-img {
+  height: 280px;
+  background-image: url(Images/diy.jpg);
+  background-size: cover;
+}
+
+/* Product 4 */
+.pr4-img {
+  height: 280px;
+  background-image: url(Images/LunchBags.jpg);
+  background-size: cover;
+}
+
+/* Product 5 */
+.pr5-img {
+  height: 280px;
+  background-image: url(Images/CarCussion.jpg);
+  background-size: cover;
+}
+
+/* Product 6 */
+.pr6-img {
+  height: 280px;
+  background-image: url(Images/Polish.jpg);
+  background-size: cover;
+}
+
+/* Product 7 */
+.pr7-img {
+  height: 280px;
+  background-image: url(Images/BatteryChrg.jpg);
+  background-size: cover;
+}
+
+/* Product 8 */
+.pr8-img {
+  height: 280px;
+  background-image: url(Images/Lamps.png);
+  background-size: cover;
+}
+
+/* Footer 1st Panel */
+.foot-pan1 {
+  background-color: #37475a;
+  color: white;
+  height: 30px;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.foot-pan1:hover {
+  opacity: 90%;
+}
+
+/* Footer 2nd Panel */
+.foot-pan2 {
+  background-color: #222f3d;
+  color: white;
+  display: flex;
+  height: 220px;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.foot-pan2 ul {
+  margin-top: 25px;
+}
+
+.foot-pan2 ul p {
+  font-weight: 700;
+}
+.foot-pan2 ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 0.5em;
+  color: #cccccc;
+  cursor: pointer;
+}
+.foot-pan2 ul a:hover {
+  text-decoration: underline;
+}
+
+/* Footer 3rd Panel */
+.foot-pan3 {
+  height: 70px;
+  background-color: #222f3d;
+  border-top: 0.5px solid #cccccc;
+  display: flex;
+  justify-content: center;
+}
+
+.logo2 {
+  background-image: url(Images/Logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  margin-top: 15px;
+}
+
+/* Foot 4th Panel */
+
+.foot-pan4 {
+  background-color: #0f1111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+.foot-pan4 ul {
+  margin-bottom: 5px;
+}
+.foot-pan4 ul a {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.foot-pan4 ul a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+button{
+    background: none;
+    color: aqua;
+    border: 1px solid aquamarine;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover{
+    border-color: rgb(153, 255, 0);
+    color: rgb(248, 253, 221);
+    box-shadow: 0em 0.2em 0.3em rgba(255, 255, 0, 0.712);
+    transform: translateX(0.2em) translateY(-0.25em);
+}

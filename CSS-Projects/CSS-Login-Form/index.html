@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="panel">
+      <form id="form" action="submit/">
+        <h1 class="head">Sign in</h1>
+        <input
+          type="email"
+          required
+          placeholder="email"
+          name="email"
+          class="userinput"
+        />
+        <input
+          type="password"
+          required
+          placeholder="password"
+          name="password"
+          class="userinput"
+        />
+        <button type="submit" id="login">Login</button>
+      </form>
+      <a href="#" id="forgetPass">Forget Password?</a>
+      <div id="altLogin">
+        <h2 class="head">Sign in with</h2>
+        <img
+          src="Icons/FB Logo.png"
+          class="altLoginImg"
+          alt="Login with FB"
+        /><img
+          src="Icons/Google.png"
+          class="altLoginImg"
+          alt="Login with Google"
+        />
+      </div>
+    </div>
+  </body>
+</html>

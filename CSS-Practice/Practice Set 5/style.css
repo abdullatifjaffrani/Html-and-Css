@@ -1,0 +1,11 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    background-image: url("istockphoto-163642367-612x612.jpg") ;
+    background-size: cover;
+    /* position: absolute; */
+    position: fixed;
+    right: 10px;
+    z-index: 1;
+}
